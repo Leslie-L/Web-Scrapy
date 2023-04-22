@@ -5,12 +5,12 @@ import datetime
 
 
 HOME_URL='https://www.larepublica.co/'
-
+#url del articulo
 XPATH_LINK_TO_ARTICLE = '//h2/a/@href'
-XPATH_TITLE='//div[contains(@class, "OpeningPostNormal")]/div/div/h2/span/text()'
-XPATH_SUMMARY='//div[contains(@class, "lead")]/p/text()'
-XPATH_BODY='//div[@class="html-content"]/p//text()'
 
+XPATH_TITLE='//h2/span/text()'
+XPATH_SUMMARY='//div[@class=“lead”]/p/text()'
+XPATH_BODY='//div[@class=“html-content”]/p//text()'
 
 def parse_notice(link,today):
     try:
@@ -48,7 +48,7 @@ def parse_home():
             parsed=html.fromstring(home)
             #obtiene una lista 
             links_to_notices=parsed.xpath(XPATH_LINK_TO_ARTICLE)
-            #print(links_to_notices)
+            print(links_to_notices)
             today=datetime.date.today().strftime('%d-%m-%Y')
             if not os.path.isdir(today):
                 os.mkdir(today)
