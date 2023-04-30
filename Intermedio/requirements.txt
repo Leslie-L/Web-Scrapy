@@ -50,8 +50,10 @@ nbformat==5.8.0
 nest-asyncio==1.5.6
 notebook==6.5.4
 notebook_shim==0.2.2
+numpy==1.24.3
 outcome==1.2.0
 packaging==23.1
+pandas==2.0.1
 pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
@@ -66,6 +68,7 @@ pyrsistent==0.19.3
 PySocks==1.7.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
+pytz==2023.3
 pywin32==306
 pywinpty==2.0.10
 PyYAML==6.0
@@ -88,6 +91,7 @@ tornado==6.3.1
 traitlets==5.9.0
 trio==0.22.0
 trio-websocket==0.10.2
+tzdata==2023.3
 uri-template==1.2.0
 urllib3==1.26.15
 wcwidth==0.2.6
