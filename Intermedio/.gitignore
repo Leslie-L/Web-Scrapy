@@ -178,7 +178,7 @@ __pypackages__/
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
-
+spotify.ipynb
 # SageMath parsed files
 *.sage.py
 

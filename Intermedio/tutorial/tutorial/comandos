@@ -1,0 +1,43 @@
+pip install autopep8
+
+#crear un proyecto
+scrapy startproject nombre
+
+#ejecutar screpy para obtener el archivo de forma cruda
+scrscrapy crawl nombre
+#obtener la salida de scrapy en un archivo
+scrapy creawl "nombre" -o "nombreSalida".json
+
+#pasar argumentos
+scrapy creawl "nombre" -a  argumento=3
+
+#usar la consola de scrapy
+scrapy shell "link"
+##dentro de la consola de scrapy
+-response.xpath('expresion')
+##obetener una lista
+-response.xpath('//span[@class="text" and @itemprop="text"]/text()').getall()
+##salir
+-exit
+
+
+
+#Generadores e Iteradores
+Iterables: estructuras que se pueden dividir. 
+A partir de ellos se crea un iterador.
+
+
+Generadores: funcion con "poderes especiales".
+python guarda el estado de la funcion
+utiliza la palabra reservada yield
+yield es como el return pero guarda el estado.
+
+- pipelines.py: permite modificar los datos desde que entran al spider (scripts que extraen información) hasta el final.
+- middlewares.py: trabaja con un concepto denominado señales: controla eventos que suceden entre los requests y la captura de información.
+- items.py: transforma los datos que se reciben del requests.
+- _ init _.py: define que todos los archivos en la carpeta son un módulo de python.
+- Folder spiders: en donde se crearan los scripts.
+- settings.py: archivo con configuraciones del uso de Scrapy.
+
+Spider
+es una clase en la que definimos que queremos extraer de una pagina.
